@@ -7,7 +7,7 @@ export const productData = (data = [], action) => {
             console.warn("PRODUCT_LIST condition", action)
             return [action.data, ...data]
         default:
-            return []
+            return data
     }
 
 }

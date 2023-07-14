@@ -6,7 +6,7 @@ export const cartData = (data = [], action) => {
             return [action.data, ...data]
         case REMOVE_FROM_CART:
             console.warn("REMOVE_FROM_CART condition", action)
-            data.length = data.length? data.length - 1 : [];
+            data = data.length? data.length - 1 : [];
             return [...data]
         case EMPTY_CART:
             console.warn("EMPTY_CART condition", action)

@@ -33,6 +33,17 @@ function Main() {
                     Product List
                 </button>
             </div>
+            <div className='product-container'>
+                {
+                    data.map((item)=><div className='product-item'>
+                        <img src={item.photo} alt=''/>
+                        <div>Name : {item.name}</div>
+                        <div>Catagory : {item.catagory}</div>
+                        <div>Price : {item.price}</div>
+
+                    </div>)
+                }
+            </div>
         </div>
     );
 }
